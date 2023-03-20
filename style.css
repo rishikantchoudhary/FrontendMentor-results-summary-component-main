@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 50px;
+    height: 350px;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 9px 20px 0 rgba(35, 19, 217, 0.14);
+    display: flex;
+}
+
+.box1 {
+    height: 350px;
+    width: 250px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+.smallc,
+.text2 {
+    color: hsl(241, 100%, 89%);
+    font-family: 'Hanken Grotesk';
+}
+
+.text1,
+.bigc {
+    color: white;
+}
+
+p {
+    font-family: 'Hanken Grotesk';
+}
+
+h1 {
+    font-size: 17px;
+    margin: 25px 0px;
+}
+
+.circle {
+    margin: 0px 0px 15px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.bigc {
+    font-size: 60px;
+    padding: 27px 38px 0px;
+    height: 70px;
+}
+
+.smallc {
+    padding: 0px 52px;
+    font-size: 12px
+}
+
+.text1 {
+    padding: 3px 0px;
+    font-size: 24px;
+}
+
+.text2 {
+    text-align: center;
+    padding: 5px 35px;
+    font-size: 13px;
+}
+
+.box2 {
+    padding: 25px;
+    height: 350px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.box2heading {
+    padding: 0px 0px 15px;
+    font-size: 19px;
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.070);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.070);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.070);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.070);
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+    margin: 5px 0px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+}
+
+img {
+    height: 20px;
+    padding: 0px 13px;
+}
+
+.rea {
+    width: 92px;
+    color: hsl(0, 100%, 67%);
+}
+
+.mem {
+    width: 92px;
+    color: hsl(39, 100%, 56%);
+}
+
+.ver {
+    width: 92px;
+    color: hsl(166, 100%, 37%);
+}
+
+.vis {
+    width: 92px;
+    color: hsl(234, 85%, 45%);
+}
+
+.score1,
+.score2,
+.criteria {
+    font-size: 14px;
+}
+
+.score1 {
+    color: hsl(224, 30%, 39%);
+    font-weight: 800;
+}
+
+.score2 {
+    color: hsl(240, 16%, 49%);
+    font-weight: 600;
+}
+
+input {
+    margin: 18px 0 0;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(241, 100%, 89%);
+    font-family: 'Hanken Grotesk';
+    font-size: 15px;
+    font-weight: 800;
+}
+
+input:hover {
+    cursor: grab;
+}
+
+input:active {
+    cursor: grabbing;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width : 500px) {
+    .container {
+        height: 700px;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .box1,
+    .box2 {
+        width: 100vw;
+    }
+
+    .reaction,
+    .memory,
+    .verbal,
+    .visual,
+    input {
+        width: 85vw;
+    }
+
+    .rea, .mem, .ver, .vis{
+        width: 57vw;
+    }
+}
+@media only screen and (max-width : 380px) {
+    .rea, .mem, .ver, .vis{
+        width: 50vw;
+    }
+}
