@@ -1,6 +1,7 @@
 # Frontend Mentor - Results summary component
 
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
+[Site preview](https://curious-phoenix-a589a0.netlify.app)
 
 ## Welcome! 👋
 
